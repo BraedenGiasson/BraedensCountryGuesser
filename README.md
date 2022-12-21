@@ -1,146 +1,130 @@
-# Project
+# Project Proposal
 
-- 💯**Worth**:
-  - **Proposal**: 10%
-  - **Implementation**: 20%
-- 📅**Due**:
-  - **Proposal**: November 25, 2022 @ 23:59
-  - **Implementation Demo**: December 8-9, 2022 @ your demo appointment time
-- 🙅🏽‍**Penalty**: Late submissions lose 10% per day to a maximum of 3 days. Nothing is accepted after 3 days and a grade of 0% will be given.
+## ✒️Description 
+When thinking of an idea for the final project, I realized I should probably combine my passions of geography and travel to make a game I would want to play. I decided to come up with a country guesser game, based on the European continent. The game consists of a player who was to guess the correct filled in country. The player has a guess out of 4 options, and the game will have a timer going for how long it takes the player to play the game. The goal of the game is to guess all countries correctly. Failure to guess a country correctly will result in +5secs on the timer and a loss of a life. The player will have 5 lives, and will end the game once all 5 lives have been depleted.
+## 🕹️Gameplay
 
-## 🎯 Objectives
+The game begins by the TitleScreenState, where the player will be able to choose a 'Play Game' option, which will take them to the CountrySelectionState, or a 'Previous Records' option, which would take them to a page showing record times and countries guessed. I also plan on implementing a similar background to that of Match 3, where it would show the game map, and at random times, a country would get filled in, while waiting for the player to select a choice. However, this would be an extra that I will implement, but maybe only after the submission date due to time constraints. 
 
-- Combine everything you've learned during this course to create your own video game.
+Once the player goes into the game, they will be met with a couple of messages on how to play the game. They will then see that they have 5 lives, and a timer will start. The game will then transition into the CountrySelectionState, where the empty map will be shown, and a random country will be filled in Blue, alongside 4 option choices on the left hand side of the screen, indicating the country option choices. The Blue color indicates that it's the country the player is trying to guess. The player will either (haven't decided yet), use W & S to go between the country option choices, or will press 1,2,3, or 4, indicating the country choice. 
 
-## ✒️ Description
+After the player chooses a country guess, if the guess is incorrect, the player will be taken to the IncorrectSelectionState. The player will lose a life, and the correct option will be shown. This will also will result in +5secs on the timer. The player can then press 'Enter' to continue to the next country guess (CountrySelectionState), and the country that they guessed incorrectly, will be colored in Red, indicating a wrong guess.
 
-This is it - the culmination of all the skills and knowledge about game development over this past semester. It's like fighting the [final boss](https://img-9gag-fun.9cache.com/photo/awMrL1D_460s.jpg) at the end of a game. I know you have everything it takes to conquer it! 😉
+If the country guess is correct, the player will be taken to the CorrectSelectionState. The country will be filled in Green, representing a correct guess. A flagpole will also be planted on the correctly guess country. The game will then move onto the next country guess (CountrySelectionState). 
 
-This project can be done, at most, in pairs. Whether you do in alone or in a pair, you will be doing the same amount of work. I will try to ensure this as best as possible based on your proposal. No, you do not have to work with someone from your own section.
+If the country to guess is the last country, and the player correctly guesses every country, they will be taken to the VictoryState. The VictoryState will show the time it took the player to guess all countries, the number of correctly guessed countries, and a cool message indicating success. The player will also have the option to 'Go to Main Menu', which would take them to the TitleScreenState, or a 'Play Again' option, which would take them into a new game.
 
-The game itself is largely up to you - I want you to get creative! If you're having trouble thinking of ideas, mash 2 genres together and see if that sparks anything. Maybe you'll make a 2D side-scrolling platformer with puzzle elements? Maybe you'll make an endless runner dungeon-crawler with a physics engine?
+If during the game, the player loses all their lives, they will be taken to the GameOverState, which would display the time the player played for, and the number of correctly guesses countries. The player will also have the option to 'Go to Main Menu', which would take them to the TitleScreenState, or a 'Play Again' option, which would take them into a new game.
 
-[The sky is the limit](https://en.wikipedia.org/wiki/List_of_video_game_genres)!
+Additionally, if time constraints allow (or after the submission date), I would like to implement a pause system, that would temporarily pause the game. I would also like to implement an optional reading of facts about a country when guessed.
 
-## 📐 Proposal
+## 📃Requirements
 
-I ask that you go about your design and architecture in a meaningful and purpose-driven way. For this reason, I'm asking you to first write a proposal for your game. This will make you think about the different states, classes, relationships, design patterns, etc. that you will have to adhere to when it comes time for the implementation.
+1. The player should see a faint europe map in the TitleScreenState
+2. The player shall be able to switch between wanting to play the game, and see previous records
+3. The player shall be able to click on the previous record button
+4. The player shall be able to see a list of previous records they scored in other games
+5. The player shall be able to click on the play game button
+6. The player should see a couple of messages letting them know how to play the game
+7. The player should be able to see the number of lives, and the timer on the top right of the screen
+8. The player should be able to see a country filled in Blue
+9. The player should be able to see a panel on the left with the possible countries to guess
+10. The player should be able to select different countries in the panel, and a border should indicate the highlighted country option
+11. The player shall press a button to guess a country
+12. The game should determine whether the country was correctly guessed
+13. The player shall be able to see the country now filled in Green
+14. The player should be able to see a flagpole inserted on the country.
+15. The player should be able to see their chosen option filled in green
+16. The player shall see a message indicating a successful guess
+17. The player shall see the country now filled in Red
+18. The player should be able to see the country selection they guessed filled in Red
+19. The player should be able to see the correct country selection bordered Green
+20. The player shall see a life lost
+21. The player shall see +5secs added to the timer
+22. The player shall see a transition to the next country selection
+23. The player shall see a transition to the victory screen
+24. The player should be able to see a couple of messages on the victory screen, including the time and number of countries guesses
+25. The player shall see 2 options to play again or return to the main menu
+26. The player shall be able to switch between these 2 selection options
+27. The player shall be taken into a new game if they want to play again
+28. The player shall return to the TitleScreenState if they want to go to the main menu
+29. The player shall see a transition to the game over screen
+30. The player should be able to see a couple of messages on the game over screen, including the time and number of countries guesses
+31. The player shall see 2 options to play again or return to the main menu
+32. The player shall be able to switch between these 2 selection options
+33. The player shall be taken into a new game if they want to play again
+34. The player shall return to the TitleScreenState if they want to go to the main menu
 
-- The proposal document should be the `README.md` for your repo.
-  - **Please look in the `Sample-Proposal` folder** of this repo to get an idea of how your proposal should look.
-  - If you're not familiar with writing markdown (`.md`) then please do this [short tutorial](https://www.markdowntutorial.com/). You can also look at any of the `README.md` files I've written for you over the course of this semester for reference.
-- The proposal must include the following sections:
-  1. **Description** including the premise, the genre (ex. puzzle/action/adventure/shooter/etc.), the control scheme (ex. `mouse` to shoot, `w` `a` `s` `d` to move, `spacebar` to jump, etc.), and the gameplay.
-  2. **Requirements** about what the player should be able to do in your game.
-  3. **Diagrams**
-     - [**State Diagrams**](https://www.youtube.com/watch?v=_6TFVzBW7oo) including game states (ex. [Breakout]((https://jac-cs-game-programming-fall22.github.io/Notes/#/2-Breakout/?id=breakout-state-flow))) and entity states (ex. [_Mario_](https://jac-cs-game-programming-fall22.github.io/Notes/#/3-Mario/?id=state-diagram) or [_Zelda_](https://jac-cs-game-programming-fall22.github.io/Notes/#/5-Zelda/?id=state-diagram)).
-     - [**Class Diagram**](https://www.youtube.com/watch?v=3cmzqZzwNDM&list=RDCMUCwRXb5dUK4cvsHbx-rGzSgw&index=3) where you outline:
-       - All classes in your game and the relationships between the classes
-       - Inheritance and polymorphism
-       - [Factory pattern]((https://refactoring.guru/design-patterns/factory-method))
-     - If you're curious how I do mine, I use [PlantUML](https://plantuml.com/) to write out my diagrams in plaintext and then render them using [PlantText](https://www.planttext.com/).
-     - If you'd rather use a GUI, [app.diagrams.net](https://app.diagrams.net/) and [Lucidchart](https://www.lucidchart.com/pages/) are good free tools. You could even use PowerPoint like I did initially for the [Breakout state diagram](https://jac-cs-game-programming-fall22.github.io/Notes/#/2-Breakout/?id=breakout-state-flow)!
-  4. **Wireframes** to give yourself a rough idea of what the game will look like and to give me a preview of what to expect.
-     - These can be hand drawn (paper or tablet) or digitally drawn using tools like MSPaint, Photoshop - whatever is easiest for you!
-       - If you go hand drawn then please scan in photos of your drawings to include in the proposal document.
-     - [Here's a great example video](https://www.youtube.com/watch?v=GE_ozc2BhMo) of game wireframes.
-  5. **Assets** describing which images, sounds, and fonts you'll be using for your game and **where** you'll get them from.
-     - It's imperative to **always cite your sources**!
-  6. **And any other sections** you think are relevant to explain the implementation details of your game.
-     - Maybe you're using an [external library](https://confettijs.org/)?
-     - Maybe you're not using canvas and using something else like [Unity](https://unity.com/)?
-     - Maybe you're implementing an [interesting algorithm](https://youtu.be/0ZONMNUKTfU)?
-     - Make sure to explain it all in detail here!
+## 🤖 State Diagram
 
-Yes, the final implementation will probably not be 100% accurate based on the proposal, **and that's fine**. Things change along the way, that's just development. What's important is you satisfy all the grading critera.
+![Game Prog Project - State Diagram](/READTHIS-images/Game%20Prog%20Project%20-%20State%20Diagram.png)
 
-## 🔨 Implementation
+## 🗺️ Class Diagram
 
-This is where the fun begins! As I said, the game itself is all up to you, however, I want to see specific elements in your code that show me you've progressed as a developer and aren't writing [first-year](https://gist.github.com/pixeldesu/f6c8bd3c2d2b09f177c196a826b18dd2) level code! 🙈
+I'm not sure how correct my class diagram is, but below shows the class diagrams for the different states in the game.
 
-Depending on the game you decide to make, you may not be able to fulfil all of the requirements just by the very nature of the game itself. If this is the case, **come talk to me and we can figure out a compromise**.
+![Game Prog Project - States Class Diagram](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Class%20Diagram%20-%20GameStates.png)
 
-### 📃 Requirements
+Below shows the class diagram for the game objects.
 
-- 🤖 **State Machines**
-  - At the very least, you should have one [global state machine](https://jac-cs-game-programming-fall22.github.io/Notes/#/1-Flappy-Bird/?id=%f0%9f%a4%96-flappy-bird-7-the-quotstate-machinequot-update) that controls the state of the game.
-  - The bare minimum for states are `TitleScreenState`, `PlayState`, `VictoryState`, and `GameOverState`, (you can rename them if you wish) though I expect you'll have more for your game.
-  - As we saw in [_Mario_](https://jac-cs-game-programming-fall22.github.io/Notes/#/3-Mario/?id=%f0%9f%a4%96-mario-5-the-quotstateful-heroquot-update) and [_Zelda_](https://jac-cs-game-programming-fall22.github.io/Notes/#/5-Zelda/?id=state-diagram), individual entities can have their own state machines as well.
-- 🧱 **Inheritance & Polymorphism**
-  - I want to see good object-oriented practices in your code. As soon as you have different "types" of anything in your game, that's the telltale sign that you need to use inheritance and polymorphism.
-  - Check out my feedback on your _Breakout_ assignment on Gradescope for reference.
-- 🏭 **Factory Design Pattern**
-  - To create all of the aforementioned "types" of something in your game, a good idea is to stick the creation logic inside its own dedicated [Factory](https://refactoring.guru/design-patterns/factory-method) class.
-  - See [`EnemyFactory` from _Zelda_](https://jac-cs-game-programming-fall22.github.io/Notes/#/5-Zelda/?id=the-factory-design-pattern) or [`BirdFactory` from _Angry Birds_](https://jac-cs-game-programming-fall22.github.io/Notes/#/5-Angry-Birds/?id=important-code-3) as an example.
-- 🔢 **Enums**
-  - Get rid of any magic numbers or strings from your code using enums.
-  - Almost every game we've done has had at least some enums so refer to those as an example.
-- ⭐ **Game Entities & Game Objects**
-  - Starting from _Mario_ we learned about [entities](https://jac-cs-game-programming-fall22.github.io/Notes/#/3-Mario/?id=entities) and [objects](https://jac-cs-game-programming-fall22.github.io/Notes/#/3-Mario/?id=game-objects). Usually, entities are more "intelligent" than objects. Entities can interact with objects that are collidable, solid, or consumable. You should know the deal by now!
-- 🎯 **Collision Detection & Hitboxes**
-  - Whether it's [AABB](https://jac-cs-game-programming-fall22.github.io/Notes/#/0-Pong/?id=aabb-collision-detection), [tilemap collision](https://jac-cs-game-programming-fall22.github.io/Notes/#/3-Mario/?id=tile-collision), or using a [physics engine](https://jac-cs-game-programming-fall22.github.io/Notes/#/5-Angry-Birds/?id=physics-engines), I want to see some form of collision detection in your game.
-  - To make your collisions more realistic and interesting, use the [`Hitbox`](https://jac-cs-game-programming-fall22.github.io/Notes/#/5-Zelda/?id=hitboxes) library class.
-- 💾 **Persistance**
-  - [Remember in Breakout where we persisted high scores](https://jac-cs-game-programming-fall22.github.io/Notes/#/2-Breakout/?id=%f0%9f%8e%89-breakout-6-the-quothigh-scorequot-update)? I want your game to use persistance as well. You can save scores, game options, or even the entire state of your game so that a player can come back and start off where they left!
-- 🎉 **Win & Loss Conditions**
-  - The fundamental thing that makes a game a game is the fact that you can win or lose. This should be pretty self-explanatory.
-- 🏆 **Score/Points/Prizes**
-  - Maybe your character gains points as they kill enemies, maybe they accumulate a number of wins per round or level, maybe they're awarded some kind of medal or trophy at the end - who knows! It's all up to you.
-- 👾 **Sprites**
-  - Your game should be nice to look at - no coloured canvas shapes! There is tons of free sprite work you can find online.
-  - A lot of the sprites for the games in this course have come from [itch.io](https://itch.io/game-assets) and [opengameart.org](https://opengameart.org/).
-  - Be sure to provide the proper credit to the creators of the art! This can be done like I did for all the games so far at the top of the `main.js` files.
-- 🏃🏾‍♂️ **Animations**
-  - Give the appearance that your sprites/entities have life by iterating over multiple sprites in a sprite sheet.
-  - Use the `Animation.js` library class to achieve this and go back to the [notes](https://jac-cs-game-programming-fall22.github.io/Notes/#/3-Mario/?id=%f0%9f%8f%83%e2%99%82%ef%b8%8f-mario-4-the-quotanimated-heroquot-update) if you need a refresher.
-- ➡️ **Tweens**
-  - There should be elements in your game whose values need to be changed over a given period of time. These can be things like the `Pot` position from the _Zelda_ assignment or the [`Tile` elements](https://jac-cs-game-programming-fall22.github.io/Notes/#/3-Match-3/?id=important-code-8) from Match 3.
-  - Use the `Timer.js` library class to achieve this and go back to the [notes](https://jac-cs-game-programming-fall22.github.io/Notes/#/3-Match-3/?id=tweens) if you need a refresher.
-- 🎵 **Sounds & Music**
-  - Sounds always adds that extra bit of polish to a game. I want to see sound effects for things like UI element selection, walking, fighting, shooting, jumping, winning, losing, you name it, whatever makes sense for your game!
-  - The sounds for the games in this course were largely taken from [freesound.org](https://freesound.org) and [opengameart.org](https://opengameart.org/).
-  - Be sure to provide the proper credit to the creators of the sounds! This can be done like I did for all the games so far at the top of the `main.js` files.
-- 🖋️ **Fonts**
-  - Like sounds, fonts also contribute to the polish factor of your game. Have different fonts for your title screen and the various UI elements in the game.
-  - I got mine from [dafont](https://www.dafont.com/) and [Google Fonts](https://fonts.google.com/).
-  - Be sure to provide the proper credit to the creators of the fonts! This can be done like I did for all the games so far at the top of the `main.js` files.
+![Game Prog Project - Objects Class Diagram](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Class%20Diagram%20-%20GameObjects.png)
 
-### 🍽️ Template
+## 🧵 Wireframes
 
-I've provided a `Game-Template` that you can use as the base of your game. It's up to you if you want to use it or not, but I think it's a great starting point!
+The below wireframes should give a very good understanding of how the game will look/feel. Some things might change in the end product however.
 
-All the code should be contained in this repo itself. If you're working with a partner, only one of you has to accept the GitHub classroom assignment, and then that person can [add the other to this repo using the GitHub settings](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
+![Game Prog Project Proposal - Wireframe-TitleScreenState](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Wireframe-TitleScreenState.png)
 
-## 🌿 Git
+![Game Prog Project Proposal - Wireframe-CountrySelectionState](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Wireframe-CountrySelectionState.png)
 
-You can use either the Git CLI or you can also use VSC's built-in Git GUI client.
+![Game Prog Project Proposal - Wireframe-CorrectSelectionState](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Wireframe-CorrectSelectionState.png)
 
-### 🖱️ GUI
+![Game Prog Project Proposal - Wireframe-IncorrectSelectionState](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Wireframe-IncorrectSelectionState.png)
 
-1. In VSC, click on the third icon down in the left navigation bar to see a list of files that have changed and are ready to be staged.
-2. Hover over where it says _Changes_ (right below the commit textbox) and click `+` to stage all the modified files to be committed. Alternatively, you can add specific files by clicking the `+` next to the individual file.
-3. Type a commit message into the textbox and click the checkmark above it to commit all the files that were just staged.
-4. Click `...` and then `push` to push the commit(s) up to GitHub.
+![Game Prog Project Proposal - Wireframe-VictoryState](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Wireframe-VictoryState.png)
 
-### ⌨️ CLI
+![Game Prog Project Proposal - Wireframe-GameOverState](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Wireframe-GameOverState.png)
 
-1. Run `git status` to see a list of files that have changed and are ready to be staged.
-2. Run `git add .` to stage all the modified files to be committed. Alternatively, you can add specific files like this: `git add src/Project.js`.
-3. Run `git commit -m "A descriptive message here."` (including the quotes) to commit all the files that were just staged.
-4. Run `git push` to push the commit(s) up to GitHub.
+## 🎨 Assets
 
-Regardless of the method you choose, it is very important that you commit frequently because:
+### 🖼️ Images
 
-- If you end up breaking your code, it is easy to revert back to a previous commit and start over.
-- It provides a useful log of your work so that you (and your teammates if/when you're on a team) can keep track of the work that was done.
+It was hard to find the correct images that I needed, however, I got them from multiple sources linked in the References section.
 
-## 📥 Submission
+- [Europe continent background](https://www.pinterest.ca/pin/295267319301252618/)
+- (Possibly) [Life](https://desoares.itch.io/heart-icon)
 
-Once you've made your final `git push` to GitHub, here's what you have to do to submit:
+### ✏️ Fonts
 
-1. Ensure that the `README.md` for your repo is the proposal document.
-2. Ensure that the game folders are at the root of the repo directory. In other words, I don't want to see a `Game-Template` folder in the final submission.
-3. Schedule an (online, on Teams) demonstration appointment with me where I'll be grading your submission on the spot using a grading rubric.
-   - Details for how to schedule the demo will be available closer to the deadline.
-     - **You don't have to wait until the official slots are available to demo**. If you're done earlier, let me know, and we'll find a time to demo so you can get this class off your plate and focus on the 42 other things you have to do for school!
-   - The grading rubric will also be made available closer to the deadline so you know what to expect.
+All fonts were used from [Google Fonts](https://fonts.google.com/).
+
+- [Roboto](https://fonts.google.com/specimen/Roboto)
+
+### 🔊 Sounds
+
+I don't have all the sounds yet, I'm still searching for the exact sounds I want, but when I find them, I will have a:
+
+- Correct selection sound
+- Incorrect selection sound
+- Planting flag sound
+- Loss of life sound
+- Game track sound
+
+## 📚 References
+
+Map background: https://www.pinterest.ca/pin/295267319301252618/
+Font: https://fonts.google.com/
+Heart vector: https://www.vecteezy.com/vector-art/551966-heart-romantic-love-graphic
+Light bulb vector: https://www.vecteezy.com/vector-art/6757562-light-bulb-icon 
+
+
+## TODO
+
+
+## What I want to implement in the future
+
+1. Particles that come from the correct panel
+2. Collection of collected flags that you can view in the country selection
+3. A simple pause system that will pause the game
+4. Level system (easy, medium, hard) where the guess options will vary accordingly 
+5. Screen that you can pop up to learn a fact about the country to guess
