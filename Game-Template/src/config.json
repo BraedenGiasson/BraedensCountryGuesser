@@ -1,0 +1,1167 @@
+{
+	"images": [
+		{
+			"name": "europe-background",
+			"path": "./assets/images/europe-background.png",
+			"width": 1280,
+			"height": 1024
+		},
+
+		{
+			"name": "åland islands-green",
+			"path": "./assets/images/countries-green/ålandislands.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "albania-green",
+			"path": "./assets/images/countries-green/albania.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "algeria-green",
+			"path": "./assets/images/countries-green/algeria.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "andorra-green",
+			"path": "./assets/images/countries-green/andorra.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "armenia-green",
+			"path": "./assets/images/countries-green/armenia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "austria-green",
+			"path": "./assets/images/countries-green/austria.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "azerbaijan-green",
+			"path": "./assets/images/countries-green/azerbaijan.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "belarus-green",
+			"path": "./assets/images/countries-green/belarus.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "belgium-green",
+			"path": "./assets/images/countries-green/belgium.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "bosnia and herzegovina-green",
+			"path": "./assets/images/countries-green/bosniaandherzegovina.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "bulgaria-green",
+			"path": "./assets/images/countries-green/bulgaria.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "croatia-green",
+			"path": "./assets/images/countries-green/croatia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "cyprus-green",
+			"path": "./assets/images/countries-green/cyprus.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "czech republic-green",
+			"path": "./assets/images/countries-green/czechrepublic.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "denmark-green",
+			"path": "./assets/images/countries-green/denmark.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "estonia-green",
+			"path": "./assets/images/countries-green/estonia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "faroe islands-green",
+			"path": "./assets/images/countries-green/faroeislands.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "finland-green",
+			"path": "./assets/images/countries-green/finland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "france-green",
+			"path": "./assets/images/countries-green/france.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "georgia-green",
+			"path": "./assets/images/countries-green/georgia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "germany-green",
+			"path": "./assets/images/countries-green/germany.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "greece-green",
+			"path": "./assets/images/countries-green/greece.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "hungary-green",
+			"path": "./assets/images/countries-green/hungary.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "iceland-green",
+			"path": "./assets/images/countries-green/iceland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "iran-green",
+			"path": "./assets/images/countries-green/iran.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "iraq-green",
+			"path": "./assets/images/countries-green/iraq.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "ireland-green",
+			"path": "./assets/images/countries-green/ireland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "israel-green",
+			"path": "./assets/images/countries-green/israel.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "italy-green",
+			"path": "./assets/images/countries-green/italy.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "jordan-green",
+			"path": "./assets/images/countries-green/jordan.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "kazakhstan-green",
+			"path": "./assets/images/countries-green/kazakhstan.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "kosovo-green",
+			"path": "./assets/images/countries-green/kosovo.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "latvia-green",
+			"path": "./assets/images/countries-green/latvia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "lebanon-green",
+			"path": "./assets/images/countries-green/lebanon.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "liechtenstein-green",
+			"path": "./assets/images/countries-green/liechtenstein.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "lithuania-green",
+			"path": "./assets/images/countries-green/lithuania.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "luxembourg-green",
+			"path": "./assets/images/countries-green/luxembourg.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "moldova-green",
+			"path": "./assets/images/countries-green/moldova.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "montenegro-green",
+			"path": "./assets/images/countries-green/montenegro.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "morocco-green",
+			"path": "./assets/images/countries-green/morocco.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "netherlands-green",
+			"path": "./assets/images/countries-green/netherlands.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "north macedonia-green",
+			"path": "./assets/images/countries-green/northmacedonia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "norway-green",
+			"path": "./assets/images/countries-green/norway.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "palestine-green",
+			"path": "./assets/images/countries-green/palestine.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "poland-green",
+			"path": "./assets/images/countries-green/poland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "portugal-green",
+			"path": "./assets/images/countries-green/portugal.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "romania-green",
+			"path": "./assets/images/countries-green/romania.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "russia-green",
+			"path": "./assets/images/countries-green/russia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "saudi arabia-green",
+			"path": "./assets/images/countries-green/saudiarabia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "serbia-green",
+			"path": "./assets/images/countries-green/serbia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "slovakia-green",
+			"path": "./assets/images/countries-green/slovakia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "slovenia-green",
+			"path": "./assets/images/countries-green/slovenia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "spain-green",
+			"path": "./assets/images/countries-green/spain.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "sweden-green",
+			"path": "./assets/images/countries-green/sweden.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "switzerland-green",
+			"path": "./assets/images/countries-green/switzerland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "syria-green",
+			"path": "./assets/images/countries-green/syria.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "tunisia-green",
+			"path": "./assets/images/countries-green/tunisia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "turkey-green",
+			"path": "./assets/images/countries-green/turkey.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "ukraine-green",
+			"path": "./assets/images/countries-green/ukraine.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "united kingdom-green",
+			"path": "./assets/images/countries-green/unitedkingdom.png",
+			"width": 1280,
+			"height": 1024
+		},
+
+		
+		{
+			"name": "åland islands-blue",
+			"path": "./assets/images/countries-blue/ålandislands.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "albania-blue",
+			"path": "./assets/images/countries-blue/albania.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "algeria-blue",
+			"path": "./assets/images/countries-blue/algeria.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "andorra-blue",
+			"path": "./assets/images/countries-blue/andorra.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "armenia-blue",
+			"path": "./assets/images/countries-blue/armenia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "austria-blue",
+			"path": "./assets/images/countries-blue/austria.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "azerbaijan-blue",
+			"path": "./assets/images/countries-blue/azerbaijan.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "belarus-blue",
+			"path": "./assets/images/countries-blue/belarus.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "belgium-blue",
+			"path": "./assets/images/countries-blue/belgium.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "bosnia and herzegovina-blue",
+			"path": "./assets/images/countries-blue/bosniaandherzegovina.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "bulgaria-blue",
+			"path": "./assets/images/countries-blue/bulgaria.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "croatia-blue",
+			"path": "./assets/images/countries-blue/croatia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "cyprus-blue",
+			"path": "./assets/images/countries-blue/cyprus.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "czech republic-blue",
+			"path": "./assets/images/countries-blue/czechrepublic.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "denmark-blue",
+			"path": "./assets/images/countries-blue/denmark.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "estonia-blue",
+			"path": "./assets/images/countries-blue/estonia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "faroe islands-blue",
+			"path": "./assets/images/countries-blue/faroeislands.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "finland-blue",
+			"path": "./assets/images/countries-blue/finland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "france-blue",
+			"path": "./assets/images/countries-blue/france.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "georgia-blue",
+			"path": "./assets/images/countries-blue/georgia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "germany-blue",
+			"path": "./assets/images/countries-blue/germany.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "greece-blue",
+			"path": "./assets/images/countries-blue/greece.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "hungary-blue",
+			"path": "./assets/images/countries-blue/hungary.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "iceland-blue",
+			"path": "./assets/images/countries-blue/iceland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "iran-blue",
+			"path": "./assets/images/countries-blue/iran.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "iraq-blue",
+			"path": "./assets/images/countries-blue/iraq.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "ireland-blue",
+			"path": "./assets/images/countries-blue/ireland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "israel-blue",
+			"path": "./assets/images/countries-blue/israel.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "italy-blue",
+			"path": "./assets/images/countries-blue/italy.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "jordan-blue",
+			"path": "./assets/images/countries-blue/jordan.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "kazakhstan-blue",
+			"path": "./assets/images/countries-blue/kazakhstan.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "kosovo-blue",
+			"path": "./assets/images/countries-blue/kosovo.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "latvia-blue",
+			"path": "./assets/images/countries-blue/latvia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "lebanon-blue",
+			"path": "./assets/images/countries-blue/lebanon.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "liechtenstein-blue",
+			"path": "./assets/images/countries-blue/liechtenstein.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "lithuania-blue",
+			"path": "./assets/images/countries-blue/lithuania.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "luxembourg-blue",
+			"path": "./assets/images/countries-blue/luxembourg.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "moldova-blue",
+			"path": "./assets/images/countries-blue/moldova.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "montenegro-blue",
+			"path": "./assets/images/countries-blue/montenegro.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "morocco-blue",
+			"path": "./assets/images/countries-blue/morocco.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "netherlands-blue",
+			"path": "./assets/images/countries-blue/netherlands.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "north macedonia-blue",
+			"path": "./assets/images/countries-blue/northmacedonia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "norway-blue",
+			"path": "./assets/images/countries-blue/norway.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "palestine-blue",
+			"path": "./assets/images/countries-blue/palestine.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "poland-blue",
+			"path": "./assets/images/countries-blue/poland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "portugal-blue",
+			"path": "./assets/images/countries-blue/portugal.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "romania-blue",
+			"path": "./assets/images/countries-blue/romania.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "russia-blue",
+			"path": "./assets/images/countries-blue/russia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "saudi arabia-blue",
+			"path": "./assets/images/countries-blue/saudiarabia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "serbia-blue",
+			"path": "./assets/images/countries-blue/serbia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "slovakia-blue",
+			"path": "./assets/images/countries-blue/slovakia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "slovenia-blue",
+			"path": "./assets/images/countries-blue/slovenia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "spain-blue",
+			"path": "./assets/images/countries-blue/spain.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "sweden-blue",
+			"path": "./assets/images/countries-blue/sweden.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "switzerland-blue",
+			"path": "./assets/images/countries-blue/switzerland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "syria-blue",
+			"path": "./assets/images/countries-blue/syria.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "tunisia-blue",
+			"path": "./assets/images/countries-blue/tunisia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "turkey-blue",
+			"path": "./assets/images/countries-blue/turkey.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "ukraine-blue",
+			"path": "./assets/images/countries-blue/ukraine.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "united kingdom-blue",
+			"path": "./assets/images/countries-blue/unitedkingdom.png",
+			"width": 1280,
+			"height": 1024
+		},
+
+
+		{
+			"name": "åland islands-red",
+			"path": "./assets/images/countries-red/ålandislands.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "albania-red",
+			"path": "./assets/images/countries-red/albania.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "algeria-red",
+			"path": "./assets/images/countries-red/algeria.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "andorra-red",
+			"path": "./assets/images/countries-red/andorra.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "armenia-red",
+			"path": "./assets/images/countries-red/armenia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "austria-red",
+			"path": "./assets/images/countries-red/austria.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "azerbaijan-red",
+			"path": "./assets/images/countries-red/azerbaijan.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "belarus-red",
+			"path": "./assets/images/countries-red/belarus.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "belgium-red",
+			"path": "./assets/images/countries-red/belgium.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "bosnia and herzegovina-red",
+			"path": "./assets/images/countries-red/bosniaandherzegovina.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "bulgaria-red",
+			"path": "./assets/images/countries-red/bulgaria.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "croatia-red",
+			"path": "./assets/images/countries-red/croatia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "cyprus-red",
+			"path": "./assets/images/countries-red/cyprus.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "czech republic-red",
+			"path": "./assets/images/countries-red/czechrepublic.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "denmark-red",
+			"path": "./assets/images/countries-red/denmark.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "estonia-red",
+			"path": "./assets/images/countries-red/estonia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "faroe islands-red",
+			"path": "./assets/images/countries-red/faroeislands.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "finland-red",
+			"path": "./assets/images/countries-red/finland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "france-red",
+			"path": "./assets/images/countries-red/france.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "georgia-red",
+			"path": "./assets/images/countries-red/georgia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "germany-red",
+			"path": "./assets/images/countries-red/germany.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "greece-red",
+			"path": "./assets/images/countries-red/greece.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "hungary-red",
+			"path": "./assets/images/countries-red/hungary.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "iceland-red",
+			"path": "./assets/images/countries-red/iceland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "iran-red",
+			"path": "./assets/images/countries-red/iran.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "iraq-red",
+			"path": "./assets/images/countries-red/iraq.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "ireland-red",
+			"path": "./assets/images/countries-red/ireland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "israel-red",
+			"path": "./assets/images/countries-red/israel.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "italy-red",
+			"path": "./assets/images/countries-red/italy.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "jordan-red",
+			"path": "./assets/images/countries-red/jordan.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "kazakhstan-red",
+			"path": "./assets/images/countries-red/kazakhstan.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "kosovo-red",
+			"path": "./assets/images/countries-red/kosovo.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "latvia-red",
+			"path": "./assets/images/countries-red/latvia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "lebanon-red",
+			"path": "./assets/images/countries-red/lebanon.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "liechtenstein-red",
+			"path": "./assets/images/countries-red/liechtenstein.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "lithuania-red",
+			"path": "./assets/images/countries-red/lithuania.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "luxembourg-red",
+			"path": "./assets/images/countries-red/luxembourg.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "moldova-red",
+			"path": "./assets/images/countries-red/moldova.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "montenegro-red",
+			"path": "./assets/images/countries-red/montenegro.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "morocco-red",
+			"path": "./assets/images/countries-red/morocco.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "netherlands-red",
+			"path": "./assets/images/countries-red/netherlands.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "north macedonia-red",
+			"path": "./assets/images/countries-red/northmacedonia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "norway-red",
+			"path": "./assets/images/countries-red/norway.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "palestine-red",
+			"path": "./assets/images/countries-red/palestine.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "poland-red",
+			"path": "./assets/images/countries-red/poland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "portugal-red",
+			"path": "./assets/images/countries-red/portugal.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "romania-red",
+			"path": "./assets/images/countries-red/romania.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "russia-red",
+			"path": "./assets/images/countries-red/russia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "saudi arabia-red",
+			"path": "./assets/images/countries-red/saudiarabia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "serbia-red",
+			"path": "./assets/images/countries-red/serbia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "slovakia-red",
+			"path": "./assets/images/countries-red/slovakia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "slovenia-red",
+			"path": "./assets/images/countries-red/slovenia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "spain-red",
+			"path": "./assets/images/countries-red/spain.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "sweden-red",
+			"path": "./assets/images/countries-red/sweden.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "switzerland-red",
+			"path": "./assets/images/countries-red/switzerland.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "syria-red",
+			"path": "./assets/images/countries-red/syria.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "tunisia-red",
+			"path": "./assets/images/countries-red/tunisia.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "turkey-red",
+			"path": "./assets/images/countries-red/turkey.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "ukraine-red",
+			"path": "./assets/images/countries-red/ukraine.png",
+			"width": 1280,
+			"height": 1024
+		},
+		{
+			"name": "united kingdom-red",
+			"path": "./assets/images/countries-red/unitedkingdom.png",
+			"width": 1280,
+			"height": 1024
+		},
+
+
+		{
+			"name": "heart-full",
+			"path": "./assets/images/hearts/heart-full.png",
+			"width": 760,
+			"height": 700
+		},
+		{
+			"name": "heart-empty",
+			"path": "./assets/images/hearts/heart-empty.png",
+			"width": 760,
+			"height": 700
+		},
+
+
+		{
+			"name": "hint-empty",
+			"path": "./assets/images/hints/Hint-empty.png",
+			"width": 500,
+			"height": 500
+		},
+		{
+			"name": "hint-full",
+			"path": "./assets/images/hints/Hint-full.png",
+			"width": 500,
+			"height": 500
+		}
+	],
+	"fonts": [
+		{
+			"name": "Joystix",
+			"path": "./assets/fonts/Joystix.ttf"
+		}
+	],
+	"sounds": [
+		{
+			"name": "correct-selection",
+			"path": "./assets/sounds/correct-selection.mp3",
+			"size": 1,
+			"volume": 0.1
+		},
+		{
+			"name": "incorrect-selection",
+			"path": "./assets/sounds/incorrect-selection.mp3",
+			"size": 1,
+			"volume": 1
+		},
+		{
+			"name": "game-win",
+			"path": "./assets/sounds/game-win.wav",
+			"size": 1,
+			"volume": 0.1
+		},
+		{
+			"name": "game-lose",
+			"path": "./assets/sounds/game-lose.wav",
+			"size": 1,
+			"volume": 0.1
+		},
+		{
+			"name": "menu_selection",
+			"path": "./assets/sounds/menu_selection.wav",
+			"size": 1,
+			"volume": 0.1
+		},
+		{
+			"name": "how-to-play-select",
+			"path": "./assets/sounds/how-to-play-select.wav",
+			"size": 1,
+			"volume": 0.1
+		}
+	]
+}
