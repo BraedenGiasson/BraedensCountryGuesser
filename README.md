@@ -1,25 +1,24 @@
 # Welcome to my Country Guesser Game! :earth_americas:
 ## :bookmark_tabs: Table of Contents
 
-- **:question: Why this Project?**
+- **:question: [Why this Project?](#question-why-this-project)**
 
-- **:earth_americas: How to Play**
-
-  - **:world_map: Map**
-  - **:electric_plug: Controls**
-  - **:dart: Main Menu**
-  - **:gem: Game Basics**
-  - **:globe_with_meridians: Playing the Game**
-  - **:white_check_mark: Correctly Guessing a Country**
-  - **:no_entry: Incorrectly Guessing a Country**
-  - **:bulb: Hints**
-  - **:heart: Losing a Life**
-  - **:hourglass: Timer**
-  - **:trophy: Winning the Game**
-  - **:x: Losing the Game**
-  - **:file_folder: Previous Records**
-- **:video_game: Play the Game**
-- **:open_file_folder: Languages, Frameworks/Libraries, and Tools**
+- **:earth_americas: [How to Play](#earth_americas-how-to-play)**
+  - **:world_map: [Map](#world_map-map)**
+  - **:electric_plug: [Controls](#electric_plug-controls)**
+  - **:dart: [Main Menu](#dart-main-menu)**
+  - **:gem: [Game Basics](#gem-game-basics)**
+  - **:globe_with_meridians: [Playing the Game](#globe_with_meridians-playing-the-game)**
+  - **:white_check_mark: [Correctly Guessing a Country](#white_check_mark-correctly-guessing-a-country)**
+  - **:no_entry: [Incorrectly Guessing a Country](#no_entry-incorrectly-guessing-a-country)**
+  - **:bulb: [Hints](#bulb-hints)**
+  - **:heart: [Losing a Life](#heart-losing-a-life)**
+  - **:hourglass: [Timer](#hourglass-timer)**
+  - **:trophy: [Winning the Game](#trophy-winning-the-game)**
+  - **:x: [Losing the Game](#x-losing-the-game)**
+  - **:file_folder: [Previous Records](#file_folder-previous-records)**
+- **:video_game: [Play the Game](#video_game-play-the-game)**
+- **:open_file_folder: [Languages, Frameworks/Libraries, and Tools](#open_file_folder-languages-frameworkslibraries-and-tools)**
 ## :question: Why this Project?
 
 This project was created as part of a final project for my Game Programming course in my second to last semester of Computer Science at John Abbott College. The **goal of the game** is to correctly guess all the countries on the map! The idea of the game came to light when I decided it would be the most fun experience to combine my **passions** of **coding** and **travel/geography** into a unique and simple game to test and expand your geographical knowledge of these countries. 
@@ -70,7 +69,7 @@ The game starts on the menu screen with 3 options, '**Play Game**', '**Previous 
 
 Press the '**H**' key your keyboard (while in the main menu), to get help on how to play the game.
 
-Press '**Enter**' on your keyboard while selecting the '**[Previous Records](#previous_records)**' option to view your top **10** previous scores and time taken.    
+Press '**Enter**' on your keyboard while selecting the '**[Previous Records](#file_folder-previous-records)**' option to view your top **10** previous scores and time taken.    
 
 Finally, to play the game, press '**Enter**' on your keyboard while selecting the '**Play Game**' option to embark on the exciting and addicting feeling of playing the game!
 ### :gem: Game Basics
@@ -90,17 +89,17 @@ To start, you'll see the **map** with all countries colored in :white_circle: **
 
 You'll also see a country colored in :large_blue_circle: **blue**, this is the country name you need to guess. On the left hand side of the screen, you'll see the country name options to guess from, you need to **correctly** guess the country that associates with the country in :large_blue_circle: **blue**. 
 
-Once you guess a country, you will find out if you :white_check_mark: [**correctly guessed the country**]() or if you :no_entry: [**incorrectly guessed the country**](#incorrectly_guessing_a_country). 
+Once you guess a country, you will find out if you :white_check_mark: [**correctly guessed the country**](#white_check_mark-correctly-guessing-a-country) or if you :no_entry: [**incorrectly guessed the country**](#no_entry-incorrectly-guessing-a-country). 
 
 You will **repeat** this process of guessing the country in :large_blue_circle: **blue** until you've finished the game!
 
-If you're unsure of where or what the country it is, you can use a :bulb: **[hint](#hints)** to help you out. Watch out, you only have **10 hints** during the game!
+If you're unsure of where or what the country it is, you can use a :bulb: **[hint](#bulb-hints)** to help you out. Watch out, you only have **10 hints** during the game!
 
-If you **incorrectly** guess the country **3 turns** in a row, you'll sadly :heart: **[lose a life](#losing_a_life)**. If you lose all 3 of your lives, the game will **end**, and you'll be a loser, so a pro tip, try not to do that!
+If you **incorrectly** guess the country **3 turns** in a row, you'll sadly :heart: **[lose a life](#heart-losing-a-life)**. If you lose all 3 of your lives, the game will **end**, and you'll be a loser, so a pro tip, try not to do that!
 
-You :trophy: **[win the game](#trophy-winning_the_game)** if you correctly guess all **60** countries on the map! 
+You :trophy: **[win the game](#trophy-winning-the-game)** if you correctly guess all **60** countries on the map! 
 
-You :x: **[lose the game](#x-losing_the_game)** if you lose all **3** of your **lives**, or if you **don't correctly** guess all 60 countries on  the map...
+You :x: **[lose the game](#x-losing-the-game)** if you lose all **3** of your **lives**, or if you **don't correctly** guess all 60 countries on  the map...
 
 Well, that's all! This is a **fun**, **interactive**, and **brain challenging** game to **test and expand** your **geographical** **knowledge** of the world. I hope you have **fun**, and :star: **good luck**!
 
@@ -120,7 +119,7 @@ When you **incorrectly** guess the country, a variety of things will happen. One
 
 You will also notice a :page_facing_up: **text block** appear on the screen with a message indicating you guessed the **wrong country**, what the **correct country name** was, and a small **information message**.
 
-If you incorrectly guessed the country for the :three: **third time in a row**, you will :heart: **[lose a life](#heart-losing_a_life)** in the **game information** panel. Don't lose all **3** lives, or else you lose... 
+If you incorrectly guessed the country for the :three: **third time in a row**, you will :heart: **[lose a life](#heart-losing-a-life)** in the **game information** panel. Don't lose all **3** lives, or else you lose... 
 
 To **end the turn**, press the '**Enter**' key on your keyboard to move onto the **next country** to guess.
 
@@ -140,11 +139,11 @@ During the game, you might end up losing a life, you don't want that...
 
 You **start** the game off with **3 lives**. You **lose a life** when you **incorrectly guess the country 3 times in a row**. You will visually see this loss in the **game information** panel, with **a heart** turning from :red_circle: **red** to :white_circle: **white**. 
 
-If you **lose** all **3 lives**, you will :x: [**lose the game**](#x-losing_the_game).
+If you **lose** all **3 lives**, you will :x: [**lose the game**](#x-losing-the-game).
 
 ### :hourglass: Timer
 
-The timer is used to track **how much time** it takes you to **finish** the game. It's only purpose is to challenge you to win the game in at **least time** as possible! If the timer distracts you, don't worry about it, focus on **correctly guessing** all the countries (try not to get one wrong!). The timer is also used in the '**[Previous Records](#previous_records)**' screen, showing on how much time it took you in that specific game.
+The timer is used to track **how much time** it takes you to **finish** the game. It's only purpose is to challenge you to win the game in at **least time** as possible! If the timer distracts you, don't worry about it, focus on **correctly guessing** all the countries (try not to get one wrong!). The timer is also used in the '**[Previous Records](#file_folder-previous-records)**' screen, showing on how much time it took you in that specific game.
 
 ### :trophy: Winning the Game
 
