@@ -1,76 +1,131 @@
 # Welcome to my Country Guesser Game! :earth_americas:
-## :bookmark_tabs: Table of contents
+## :bookmark_tabs: Table of Contents
 
 - 
+## :question: Why this Project?
 
-## :dart: Getting Started 
+This project was created as part of a final project for my Game Programming course in my second to last semester of Computer Science at John Abbott College. The **goal of the game** is to correctly guess all the countries on the map! The idea of the game came to light when I decided it would be the most fun experience to combine my **passions** of **coding** and **travel/geography** into a unique and simple game to test and expand your geographical knowledge of these countries. 
 
-### :bookmark: Prerequisites  
+## :earth_americas: How to Play
 
-**Before you begin, you will need Git and Node to run this project, download them here:**
+### :world_map: Map
 
-- **[Git](https://git-scm.com/downloads)**
-- **[Node](https://nodejs.org/en/download/)**
+The game consists of a map of countries in Europe, and small parts of Asia, Middle East, and North Africa.
 
-**Once downloaded, run these commands to make sure you have the latest versions:**
+*\* **Don't look at the countries below if you don't want to see the countries before playing the [game](https://braedengiasson.github.io/BraedensCountryGuesser.github.io/)!** \**
 
-```
-node --version
-git --version
-```
+#### European Countries
+Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Moldova, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, U.K., Ukraine, Åland Islands.
 
-\* ***If you're new to React, learn more [here](https://reactjs.org/docs/create-a-new-react-app.html).*** \*
+#### Asian Countries
+Armenia, Azerbaijan, Georgia, Kazakhstan, Russia.
+
+#### Middle Eastern Countries
+
+Cyprus, Iran, Iraq, Israel, Jordan, Lebanon, Palestine, Saudi Arabia, Syria, Turkey.
+
+#### North African Countries
+
+Algeria, Morocco, Tunisia.
+
+### :electric_plug: Controls
+
+#### W or Up Arrow
+
+Press the '**W**' or '**Up Arrow :arrow_up:**' key on your keyboard to move your selection up. 
+
+#### S or Down Arrow
+
+Press the '**S**' or '**Down Arrow :arrow_down:**' key on your keyboard to move your selection down. 
+
+#### Enter
+
+Press the '**Enter**' key on your keyboard to choose the current selection or continue. 
+
+#### H
+
+Press the '**H**' key on your keyboard to get help on how the game works, how to play, and to use a hint. 
+
+### :dart: Main Menu
+
+The game starts on the menu screen with 3 options, '**Play Game**', '**Previous Records**', '**H**'.
+
+Press the '**H**' key your keyboard (while in the main menu), to get help on how to play the game.
+
+Press '**Enter**' on your keyboard while selecting the '**[Previous Records](#previous_records)**' option to view your top **10** previous scores and time taken.    
+
+Finally, to play the game, press '**Enter**' on your keyboard while selecting the '**Play Game**' option to embark on the exciting and addicting feeling of playing the game!
+### :gem: Game Basics
+
+When starting the game, you will be greeted with a message letting you know to enjoy the game, press '**Enter**' on your keyboard to continue to the game.
+
+Then, you will be greeted with the **game map** on the right hand side of the screen. On the left hand side, there are 2 panels. 
+
+The upper small panel, holds the **game information**. This includes the number of **lives**, the number of **hints**, the amount of **correctly guessed countries**, and the game **timer**. 
+
+The lower small panel, holds the **guess options**. This includes the **4 country guess options** the user has to guess from correctly.
+### :globe_with_meridians: Playing the Game
+
+Finally, you now know the :electric_plug: **controls**, and the :gem: **game basics**, you're ready to start playing!
+
+To start, you'll see the **map** with all countries colored in :white_circle: **white**, these are the countries that haven't yet been guessed. 
+
+You'll also see a country colored in :large_blue_circle: **blue**, this is the country name you need to guess. On the left hand side of the screen, you'll see the country name options to guess from, you need to **correctly** guess the country that associates with the country in :large_blue_circle: **blue**. 
+
+Once you guess a country, you will find out if you :white_check_mark: [**correctly guessed the country**]() or if you :no_entry: [**incorrectly guessed the country**](#incorrectly_guessing_a_country). 
+
+You will **repeat** this process of guessing the country in :large_blue_circle: **blue** until you've finished the game!
+
+If you're unsure of where or what the country it is, you can use a :bulb: **[hint](#hints)** to help you out. Watch out, you only have **10 hints** during the game!
+
+If you **incorrectly** guess the country **3 turns** in a row, you'll sadly :heart: **[lose a life](#losing_a_life)**. If you lose all 3 of your lives, the game will **end**, and you'll be a loser, so a pro tip, try not to do that!
+
+You :trophy: **[win the game](winning_the_game)** if you correctly guess all **60** countries on the map! 
+
+You :x: **[lose the game](#losing_the_game)** if you lose all **3** of your **lives**, or if you **don't correctly** guess all 60 countries on  the map...
+
+Well, that's all! This is a **fun**, **interactive**, and **brain challenging** game to **test and expand** your **geographical** **knowledge** of the world. I hope you have **fun**, and :star: **good luck**!
+
+### :white_check_mark: Correctly Guessing a Country
 
 
 
-## :arrow_down: Installation
+### :no_entry: Incorrectly Guessing a Country
+### :bulb: Hints
+### :heart: Losing a Life
+### :hourglass: Timer
 
-Now it's time for you to play my game!
+The timer is used to track **how much time** it takes you to **finish** the game. It's only purpose is to challenge you to win the game in at **least time** as possible! If the timer distracts you, don't worry about it, focus on **correctly guessing** all the countries (try not to get one wrong!). The timer is also used in the '**[Previous Records](#previous_records)**' screen, showing on how much time it took you in that specific game.
 
-#### Clone the repo
+### :trophy: Winning the Game
+### :x: Losing the Game
 
-```
-git clone https://github.com/BraedenGiasson/BraedensCountryGuesser.github.io.git
-```
 
-#### Install the packages from the root directory
 
-```
-npm install
-```
-or
-```
-yarn install
-```
 
-#### Start the LocalHost by clicking on the 'Go Live' button at the bottom right of the Visual Studio Code IDE
+## :video_game: Play the Game
 
-![GoLive](./assets/images/README/GoLive.png)
+![gameplay clip](./assets/videos/gameplay.gif)
 
-## :open_file_folder: Languages and tools
+### Play my exciting and interactive game [here](https://braedengiasson.github.io/BraedensCountryGuesser.github.io/)!
+
+## :open_file_folder: Languages, Frameworks/Libraries, and Tools
 
 <div>
 	<img 	src="https://github.com/BraedenGiasson/braedengiasson.github.io/raw/main/src/assets/svg/skills/javascript.svg" alt="JavaScript" title="JavaScript" width="50px" height="50px">
         &nbsp;
-    <img 	src="https://github.com/BraedenGiasson/braedengiasson.github.io/blob/main/src/assets/svg/skills/react.svg" alt="React" title="React" width="50px" height="50px">
+    <img 	src="https://github.com/BraedenGiasson/braedengiasson.github.io/raw/main/src/assets/svg/skills/html.svg" alt="HTML" title="HTML" width="50px" height="50px">
         &nbsp;
     <img 	src="https://github.com/BraedenGiasson/braedengiasson.github.io/raw/main/src/assets/svg/skills/css.svg" alt="CSS" title="CSS" width="50px" height="50px">
         &nbsp;
-    <img 	src="https://github.com/BraedenGiasson/braedengiasson.github.io/raw/main/src/assets/svg/skills/html.svg" alt="HTML" title="HTML" width="50px" height="50px">
-        &nbsp;
-    <img 	src="https://github.com/BraedenGiasson/braedengiasson.github.io/raw/main/src/assets/svg/skills/typescript.svg" alt="TypeScript" title="TypeScript" width="50px" height="50px">
-        &nbsp;
     <img 	src="https://github.com/BraedenGiasson/braedengiasson.github.io/raw/main/src/assets/svg/skills/nodejs.svg" alt="Node.js" title="Node.js" width="50px" height="50px">
+        &nbsp;
+    <img 	src="https://github.com/BraedenGiasson/braedengiasson.github.io/blob/main/src/assets/svg/skills/photoshop.svg" alt="Photoshop" title="Photoshop" width="50px" height="50px">
         &nbsp;
     <img 	src="https://github.com/BraedenGiasson/braedengiasson.github.io/raw/main/src/assets/svg/skills/git.svg" alt="Git" title="Git" width="50px" height="50px">
         &nbsp;
 </div>
 
-## :star: Acknowledgements 
-
-This website was cloned, used, and inspired by the following developer:
-
-- **[Developer Portfolio - React](https://github.com/hhhrrrttt222111/developer-portfolio)**
 
 ## :package: Packages Used
 
@@ -88,130 +143,3 @@ This website was cloned, used, and inspired by the following developer:
 |      react-slick       |
 |     slick-carousel     |
 |       validator        |
-
-
-
-The game begins by the TitleScreenState, where the player will be able to choose a 'Play Game' option, which will take them to the CountrySelectionState, or a 'Previous Records' option, which would take them to a page showing record times and countries guessed. I also plan on implementing a similar background to that of Match 3, where it would show the game map, and at random times, a country would get filled in, while waiting for the player to select a choice. However, this would be an extra that I will implement, but maybe only after the submission date due to time constraints. 
-
-Once the player goes into the game, they will be met with a couple of messages on how to play the game. They will then see that they have 5 lives, and a timer will start. The game will then transition into the CountrySelectionState, where the empty map will be shown, and a random country will be filled in Blue, alongside 4 option choices on the left hand side of the screen, indicating the country option choices. The Blue color indicates that it's the country the player is trying to guess. The player will either (haven't decided yet), use W & S to go between the country option choices, or will press 1,2,3, or 4, indicating the country choice. 
-
-After the player chooses a country guess, if the guess is incorrect, the player will be taken to the IncorrectSelectionState. The player will lose a life, and the correct option will be shown. This will also will result in +5secs on the timer. The player can then press 'Enter' to continue to the next country guess (CountrySelectionState), and the country that they guessed incorrectly, will be colored in Red, indicating a wrong guess.
-
-If the country guess is correct, the player will be taken to the CorrectSelectionState. The country will be filled in Green, representing a correct guess. A flagpole will also be planted on the correctly guess country. The game will then move onto the next country guess (CountrySelectionState). 
-
-If the country to guess is the last country, and the player correctly guesses every country, they will be taken to the VictoryState. The VictoryState will show the time it took the player to guess all countries, the number of correctly guessed countries, and a cool message indicating success. The player will also have the option to 'Go to Main Menu', which would take them to the TitleScreenState, or a 'Play Again' option, which would take them into a new game.
-
-If during the game, the player loses all their lives, they will be taken to the GameOverState, which would display the time the player played for, and the number of correctly guesses countries. The player will also have the option to 'Go to Main Menu', which would take them to the TitleScreenState, or a 'Play Again' option, which would take them into a new game.
-
-Additionally, if time constraints allow (or after the submission date), I would like to implement a pause system, that would temporarily pause the game. I would also like to implement an optional reading of facts about a country when guessed.
-
-## 📃Requirements
-
-1. The player should see a faint europe map in the TitleScreenState
-2. The player shall be able to switch between wanting to play the game, and see previous records
-3. The player shall be able to click on the previous record button
-4. The player shall be able to see a list of previous records they scored in other games
-5. The player shall be able to click on the play game button
-6. The player should see a couple of messages letting them know how to play the game
-7. The player should be able to see the number of lives, and the timer on the top right of the screen
-8. The player should be able to see a country filled in Blue
-9. The player should be able to see a panel on the left with the possible countries to guess
-10. The player should be able to select different countries in the panel, and a border should indicate the highlighted country option
-11. The player shall press a button to guess a country
-12. The game should determine whether the country was correctly guessed
-13. The player shall be able to see the country now filled in Green
-14. The player should be able to see a flagpole inserted on the country.
-15. The player should be able to see their chosen option filled in green
-16. The player shall see a message indicating a successful guess
-17. The player shall see the country now filled in Red
-18. The player should be able to see the country selection they guessed filled in Red
-19. The player should be able to see the correct country selection bordered Green
-20. The player shall see a life lost
-21. The player shall see +5secs added to the timer
-22. The player shall see a transition to the next country selection
-23. The player shall see a transition to the victory screen
-24. The player should be able to see a couple of messages on the victory screen, including the time and number of countries guesses
-25. The player shall see 2 options to play again or return to the main menu
-26. The player shall be able to switch between these 2 selection options
-27. The player shall be taken into a new game if they want to play again
-28. The player shall return to the TitleScreenState if they want to go to the main menu
-29. The player shall see a transition to the game over screen
-30. The player should be able to see a couple of messages on the game over screen, including the time and number of countries guesses
-31. The player shall see 2 options to play again or return to the main menu
-32. The player shall be able to switch between these 2 selection options
-33. The player shall be taken into a new game if they want to play again
-34. The player shall return to the TitleScreenState if they want to go to the main menu
-
-## 🤖 State Diagram
-
-![Game Prog Project - State Diagram](/READTHIS-images/Game%20Prog%20Project%20-%20State%20Diagram.png)
-
-## 🗺️ Class Diagram
-
-I'm not sure how correct my class diagram is, but below shows the class diagrams for the different states in the game.
-
-![Game Prog Project - States Class Diagram](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Class%20Diagram%20-%20GameStates.png)
-
-Below shows the class diagram for the game objects.
-
-![Game Prog Project - Objects Class Diagram](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Class%20Diagram%20-%20GameObjects.png)
-
-## 🧵 Wireframes
-
-The below wireframes should give a very good understanding of how the game will look/feel. Some things might change in the end product however.
-
-![Game Prog Project Proposal - Wireframe-TitleScreenState](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Wireframe-TitleScreenState.png)
-
-![Game Prog Project Proposal - Wireframe-CountrySelectionState](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Wireframe-CountrySelectionState.png)
-
-![Game Prog Project Proposal - Wireframe-CorrectSelectionState](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Wireframe-CorrectSelectionState.png)
-
-![Game Prog Project Proposal - Wireframe-IncorrectSelectionState](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Wireframe-IncorrectSelectionState.png)
-
-![Game Prog Project Proposal - Wireframe-VictoryState](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Wireframe-VictoryState.png)
-
-![Game Prog Project Proposal - Wireframe-GameOverState](/READTHIS-images/Game%20Prog%20Project%20Proposal%20-%20Wireframe-GameOverState.png)
-
-## 🎨 Assets
-
-### 🖼️ Images
-
-It was hard to find the correct images that I needed, however, I got them from multiple sources linked in the References section.
-
-- [Europe continent background](https://www.pinterest.ca/pin/295267319301252618/)
-- (Possibly) [Life](https://desoares.itch.io/heart-icon)
-
-### ✏️ Fonts
-
-All fonts were used from [Google Fonts](https://fonts.google.com/).
-
-- [Roboto](https://fonts.google.com/specimen/Roboto)
-
-### 🔊 Sounds
-
-I don't have all the sounds yet, I'm still searching for the exact sounds I want, but when I find them, I will have a:
-
-- Correct selection sound
-- Incorrect selection sound
-- Planting flag sound
-- Loss of life sound
-- Game track sound
-
-## 📚 References
-
-Map background: https://www.pinterest.ca/pin/295267319301252618/
-Font: https://fonts.google.com/
-Heart vector: https://www.vecteezy.com/vector-art/551966-heart-romantic-love-graphic
-Light bulb vector: https://www.vecteezy.com/vector-art/6757562-light-bulb-icon 
-
-
-## TODO
-
-
-## What I want to implement in the future
-
-1. Particles that come from the correct panel
-2. Collection of collected flags that you can view in the country selection
-3. A simple pause system that will pause the game
-4. Level system (easy, medium, hard) where the guess options will vary accordingly 
-5. Screen that you can pop up to learn a fact about the country to guess
