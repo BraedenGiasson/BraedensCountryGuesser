@@ -17,6 +17,7 @@
   - **:trophy: [Winning the Game](#trophy-winning-the-game)**
   - **:x: [Losing the Game](#x-losing-the-game)**
   - **:end: [Ending a Game](#end-ending-a-game)**
+  - **:pause_button: [Pausing a Game](#pause_button-pausing-a-game)**
   - **:file_folder: [Previous Records](#file_folder-previous-records)**
 - **:video_game: [Play the Game](#video_game-play-the-game)**
 - **:open_file_folder: [Languages, Frameworks/Libraries, and Tools](#open_file_folder-languages-frameworkslibraries-and-tools)**
@@ -161,6 +162,14 @@ Losing the game entails that you are a **loser**, and you don't want that now do
 If you lose the game, the **game will stop**, and you will see the screen displayed with a **message indicating you lost**, the **time taken** during the game, and the **correct amount of countries guessed** out of the total (**60**).
 
 You will have the option to '**Play Again**' to hop into a new game, or go to the main menu by selecting the '**Main menu**' option.
+### :pause_button: Pausing a Game
+
+Sometimes during a game, you might **need/want to pause the game for a short period of time**.
+
+Press the '**P**' key on your keyboard to **pause the game**.
+
+If the game is **already paused**, press the '**P**' key again on your keyboard to **unpause the game**.
+
 ### :end: Ending a Game
 
 Sometimes during a game, you might **need/want to leave the game**.
