@@ -21,10 +21,12 @@ export default class Selection extends UserInterfaceElement {
 	 * @param {array} items Elements are objects that each
 	 * have a string `text` and function `onSelect` property.
 	 */
-	constructor(x, y, width, height, items) {
+	constructor(x, y, width, height, items, options) {
 		super(x, y, width, height);
 
+		this.options = options;
 		this.gapHeight = (this.dimensions.y - 30) / (items.length + 1);
+		this.gapHeightExitGame = (this.dimensions.x - 30) / (items.length + 1);
 		this.items = this.initializeItems(items);
 		this.currentSelection = TitleScreenMenuOptionSelected.Selected;
 		this.font = this.initializeFont();
@@ -32,14 +34,27 @@ export default class Selection extends UserInterfaceElement {
 	}
 
 	update() {
-		if (keys.w || keys.ArrowUp) {
-			this.navigateUp();
+		if (this.options.orientation === 'horizontal'){
+			if (keys.d || keys.ArrowRight) {
+				this.navigateUp();
+			}
+			else if (keys.a || keys.ArrowLeft) {
+				this.navigateDown();
+			}
+			else if (keys.Enter || keys[' ']) {
+				this.select();
+			}
 		}
-		else if (keys.s || keys.ArrowDown) {
-			this.navigateDown();
-		}
-		else if (keys.Enter || keys[' ']) {
-			this.select();
+		else if (this.options.orientation === 'vertical'){
+			if (keys.w || keys.ArrowUp) {
+				this.navigateUp();
+			}
+			else if (keys.s || keys.ArrowDown) {
+				this.navigateDown();
+			}
+			else if (keys.Enter || keys[' ']) {
+				this.select();
+			}
 		}
 	}
 
@@ -92,8 +107,14 @@ export default class Selection extends UserInterfaceElement {
 	}
 
 	navigateUp() {
-		keys.w = false;
-		keys.ArrowUp = false;
+		if (this.options.orientation === 'horizontal'){
+			keys.d = false;
+			keys.ArrowRight = false;
+		}
+		else if (this.options.orientation === 'vertical'){
+			keys.w = false;
+			keys.ArrowUp = false;
+		}
 
 		// sounds.play(SoundName.SelectionMove);
 
@@ -106,8 +127,16 @@ export default class Selection extends UserInterfaceElement {
 	}
 
 	navigateDown() {
-		keys.s = false;
-		keys.ArrowDown = false;
+		if (this.options.orientation === 'horizontal'){
+			keys.a = false;
+			keys.ArrowLeft = false;
+		}
+		else if (this.options.orientation === 'vertical'){
+			keys.s = false;
+			keys.ArrowDown = false;
+		}
+		// keys.s = false;
+		// keys.ArrowDown = false;
 
 		// sounds.play(SoundName.SelectionMove);
 
@@ -137,32 +166,44 @@ export default class Selection extends UserInterfaceElement {
 	 */
 	initializeItems(items) {
 		let currentY = this.position.y + 30;
+		let currentX = this.position.x - this.dimensions.x / 7.5;
 		const textItems = [];
 
-		// items.forEach((item) => {
-		// 	const padding = currentY + this.gapHeight;
-
-			// item.position = new Vector(this.position.x + this.dimensions.x / 2, padding);
-
-		// 	currentY += this.gapHeight;
-		// });
-
 		items.forEach((item, index) => {
-			const padding = currentY + this.gapHeight;
+			if (this.options.orientation === 'horizontal') {
+				const padding = currentX + this.gapHeightExitGame;
+				console.log(padding);
 
-			textItems.push(new TextOption(
-				this.position.x + (this.dimensions.x - TextOption.OPTION.width) / 2,
-				padding,
-				TextOption.OPTION.width,
-				TextOption.OPTION.height,
-				item.text,
-				item.onSelect,
-				{
-					fontSize: 30
-				}
+				textItems.push(new TextOption(
+					padding,
+					this.dimensions.y + (this.dimensions.y / 2) + 30,
+					this.options.isExitGameMenu ? TextOption.EXIT_GAME_OPTION.width : TextOption.OPTION.width,
+					this.options.isExitGameMenu ? TextOption.EXIT_GAME_OPTION.height : TextOption.OPTION.height,
+					item.text,
+					item.onSelect,
+					{
+						fontSize: 30
+					}
 			))
+			}
+			else if (this.options.orientation === 'vertical'){
+				const padding = currentY + this.gapHeight;
+				
+				textItems.push(new TextOption(
+					this.position.x + (this.dimensions.x - TextOption.OPTION.width) / 2,
+					padding,
+					this.options.isExitGameMenu ? TextOption.EXIT_GAME_OPTION.width : TextOption.OPTION.width,
+					this.options.isExitGameMenu ? TextOption.EXIT_GAME_OPTION.height : TextOption.OPTION.height,
+					item.text,
+					item.onSelect,
+					{
+						fontSize: 30
+					}
+				))
+			}
 
 			currentY += this.gapHeight;
+			currentX += this.gapHeightExitGame;
 		})
 
 		return textItems;

@@ -1,14 +1,14 @@
 {
   "name": "braedenscountryguesser",
   "version": "1.0.0",
-  "homepage": "https://braedenscountryguesser.github.io/",
+  "homepage": "https://braedengiasson.github.io/BraedensCountryGuesser.github.io/",
+  "private": true,
   "description": "## ✒️Description  When thinking of an idea for the final project, I realized I should probably combine my passions of geography and travel to make a game I would want to play. I decided to come up with a country guesser game, based on the European continent. The game consists of a player who was to guess the correct filled in country. The player has a guess out of 4 options, and the game will have a timer going for how long it takes the player to play the game. The goal of the game is to guess all countries correctly. Failure to guess a country correctly will result in +5secs on the timer and a loss of a life. The player will have 5 lives, and will end the game once all 5 lives have been depleted. ## 🕹️Gameplay",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "start": "start http://localhost:5502/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -2,7 +2,7 @@ import { pickRandomElement } from "../../lib/RandomNumberHelpers.js";
 import State from "../../lib/State.js";
 import BackgroundName from "../enums/BackgroundName.js";
 import BlueCountryName from "../enums/BlueCountryName.js";
-import { context, images, stateStack, timer } from "../globals.js";
+import { context, images, keys, stateStack, timer } from "../globals.js";
 import Background from "../objects/Background.js";
 import Country from "../objects/Country.js";
 import Map from "../objects/Map.js";
@@ -12,6 +12,8 @@ import CountrySelectionState from "./CountrySelectionState.js";
 import DialogueState from "./DialogueState.js";
 import GameOverState from "./GameOverState.js";
 import GameStatsState from "./GameStatsState.js";
+import TitleScreenState from "./TitleScreenState.js";
+import TransitionState from "./TransitionState.js";
 import VictoryState from "./VictoryState.js";
 
 export default class PlayState extends State {
@@ -29,6 +31,7 @@ export default class PlayState extends State {
 		this.hintsLeft = this.MAX_HINTS;
 		this.countries = [];
 		this.map = new Map();
+		this.paused = false;
 	}
 
 	enter(){
@@ -55,7 +58,42 @@ export default class PlayState extends State {
 		return this.numberOfLives === 0;
 	}
 
-	update(dt){
+	update(dt){		
+		if (this.paused){
+			this.exitGameMenu?.update(dt);
+			return;
+		}
+		// Show how to play page 
+		else if (keys.Escape){
+			keys.Escape = false;
+			this.paused = true;
+
+			// sounds.play(SoundName.HowToPlaySelect);
+
+			// Create the options menu
+			this.exitGameMenu = new Menu(
+				Menu.EXIT_GAME_MENU.x,
+				Menu.EXIT_GAME_MENU.y,
+				Menu.EXIT_GAME_MENU.width,
+				Menu.EXIT_GAME_MENU.height,
+				[
+					{ 
+						text: "No", 
+						onSelect: () => this.processExitGame()
+					},
+					{
+						text: "Yes", 
+						onSelect: () => this.processExitGame()
+					}
+				],
+				{
+					title: 'Exit game?',
+					orientation: 'horizontal',
+					isExitGameMenu: true
+				}
+			);
+		}
+
 		if (this.didWin()){
 			this.win();
 		}
@@ -71,7 +109,7 @@ export default class PlayState extends State {
 	render(){
 		this.map.render();
 		this.gameStats?.render();
-		// this.countries.forEach((country) => country.render());
+		this.exitGameMenu?.render();
 	}
 
 	win(){
@@ -106,5 +144,25 @@ export default class PlayState extends State {
 
 	resetNumberWrongGuesses(){
 		this.numberWrongGuessesInARow = 0;
+	}
+
+	/**
+	 * 
+	 */
+	processExitGame(){
+		const selectedOptionText = this.exitGameMenu.selection.items[this.exitGameMenu.selection.currentSelection].text;
+
+		if (selectedOptionText === 'Yes'){
+			this.paused = false;
+
+			TransitionState.fade(() => {
+				stateStack.clear();
+				stateStack.push(new TitleScreenState());
+			});
+		}
+		else if (selectedOptionText === 'No'){
+			this.paused = false;
+			this.exitGameMenu = null;
+		}
 	}
 }

@@ -8,6 +8,10 @@ export default class TextOption extends Panel {
 		width: 380, //330
 		height: 3.25
 	};
+    static EXIT_GAME_OPTION = {
+		width: 250, //330
+		height: 3.25
+	};
 
     constructor(x, y, width, height, text, onSelect, options = {}) {
 		super(x, y, width, height, options);

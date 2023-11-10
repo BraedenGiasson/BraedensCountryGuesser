@@ -10,6 +10,8 @@ import Menu from "../user-interface/elements/Menu.js";
 import Textbox from "../user-interface/elements/Textbox.js";
 import CorrectCountryState from "./CorrectCountryState.js";
 import IncorrectCountryState from "./IncorrectCountryState.js";
+import TitleScreenState from "./TitleScreenState.js";
+import TransitionState from "./TransitionState.js";
 
 export default class CountrySelectionState extends State {
 	static COUNTRY_OPTIONS_COUNT = 4;
@@ -134,9 +136,35 @@ export default class CountrySelectionState extends State {
 			stateStack.push(new IncorrectCountryState(this, selectedCountry))
 		}
 	}
+	
+	/**
+	 * 
+	 */
+	processExitGame(){
+		const selectedOptionText = this.exitGameMenu.selection.items[this.exitGameMenu.selection.currentSelection].text;
 
+		if (selectedOptionText === 'Yes'){
+			this.paused = false;
+
+			TransitionState.fade(() => {
+				stateStack.clear();
+				stateStack.push(new TitleScreenState());
+			});
+		}
+		else if (selectedOptionText === 'No'){
+			this.paused = false;
+			this.exitGameMenu = null;
+		}
+	}
+	
 	update(dt){
 		this.playState.update(dt);
+
+		// Don't update anything else if play state is paused
+		if (this.playState.paused) {
+			return;
+		}
+
 		this.map.update(dt);
 		this.countriesMenu.update();
 		this.hintsTextbox?.update();
