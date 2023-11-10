@@ -2,7 +2,6 @@
 ## :bookmark_tabs: Table of Contents
 
 - **:question: [Why this Project?](#question-why-this-project)**
-
 - **:earth_americas: [How to Play](#earth_americas-how-to-play)**
   - **:world_map: [Map](#world_map-map)**
   - **:electric_plug: [Controls](#electric_plug-controls)**
@@ -16,8 +15,8 @@
   - **:hourglass: [Timer](#hourglass-timer)**
   - **:trophy: [Winning the Game](#trophy-winning-the-game)**
   - **:x: [Losing the Game](#x-losing-the-game)**
-  - **:end: [Ending a Game](#end-ending-a-game)**
   - **:pause_button: [Pausing a Game](#pause_button-pausing-a-game)**
+  - **:end: [Ending a Game](#end-ending-a-game)**
   - **:file_folder: [Previous Records](#file_folder-previous-records)**
 - **:video_game: [Play the Game](#video_game-play-the-game)**
 - **:open_file_folder: [Languages, Frameworks/Libraries, and Tools](#open_file_folder-languages-frameworkslibraries-and-tools)**
