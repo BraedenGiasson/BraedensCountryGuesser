@@ -2,7 +2,7 @@ import { pickRandomElement } from "../../lib/RandomNumberHelpers.js";
 import State from "../../lib/State.js";
 import BackgroundName from "../enums/BackgroundName.js";
 import BlueCountryName from "../enums/BlueCountryName.js";
-import { context, images, keys, stateStack, timer } from "../globals.js";
+import { CANVAS_HEIGHT, CANVAS_WIDTH, context, images, keys, sounds, stateStack, timer } from "../globals.js";
 import Background from "../objects/Background.js";
 import Country from "../objects/Country.js";
 import Map from "../objects/Map.js";
@@ -32,6 +32,7 @@ export default class PlayState extends State {
 		this.countries = [];
 		this.map = new Map();
 		this.paused = false;
+		this.pausedToExit = false;
 	}
 
 	enter(){
@@ -59,14 +60,31 @@ export default class PlayState extends State {
 	}
 
 	update(dt){		
-		if (this.paused){
+		if (this.paused && !this.pausedToExit){
+			if (keys.p) {
+				keys.p = false;
+				this.paused = false;
+				// sounds.pause.play();
+			}
+			else {
+				return;
+			}
+		}
+		else if (keys.p && !this.pausedToExit){
+			keys.p = false;
+			this.paused = true;
+			// sounds.pause.play();
+			return;
+		}
+
+		if (this.pausedToExit){
 			this.exitGameMenu?.update(dt);
 			return;
 		}
 		// Show how to play page 
 		else if (keys.Escape){
 			keys.Escape = false;
-			this.paused = true;
+			this.pausedToExit = true;
 
 			// sounds.play(SoundName.HowToPlaySelect);
 
@@ -110,6 +128,17 @@ export default class PlayState extends State {
 		this.map.render();
 		this.gameStats?.render();
 		this.exitGameMenu?.render();
+
+		if (this.paused) {
+			context.save();
+			context.font = "200px Joystix";
+			context.fillStyle = "white";
+			context.textBaseline = 'middle';
+			context.textAlign = 'center';
+			// context.fillText(`⏸`, CANVAS_WIDTH /2 + 200, CANVAS_HEIGHT * 0.5);
+			context.fillText(`⏸`, CANVAS_WIDTH * 0.5, CANVAS_HEIGHT * 0.5);
+			context.restore();
+		}
 	}
 
 	win(){
@@ -153,6 +182,7 @@ export default class PlayState extends State {
 		const selectedOptionText = this.exitGameMenu.selection.items[this.exitGameMenu.selection.currentSelection].text;
 
 		if (selectedOptionText === 'Yes'){
+			this.pausedToExit = false;
 			this.paused = false;
 
 			TransitionState.fade(() => {
@@ -161,7 +191,9 @@ export default class PlayState extends State {
 			});
 		}
 		else if (selectedOptionText === 'No'){
+			this.pausedToExit = false;
 			this.paused = false;
+			keys.Escape = false;
 			this.exitGameMenu = null;
 		}
 	}

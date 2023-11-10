@@ -172,7 +172,6 @@ export default class Selection extends UserInterfaceElement {
 		items.forEach((item, index) => {
 			if (this.options.orientation === 'horizontal') {
 				const padding = currentX + this.gapHeightExitGame;
-				console.log(padding);
 
 				textItems.push(new TextOption(
 					padding,
